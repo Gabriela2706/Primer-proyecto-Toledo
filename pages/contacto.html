@@ -50,20 +50,20 @@
         <div class="main-contacto">
             <div id="formulario">
                 <form action="./contacto.html" method="post">
-                    <p>
-                        <label for="nombre">Nombre:</label>
+                    <p> <!-- En lugar de usar un <p> podrias usar un <div> y agregarle estilos para formatear con el CSS (es lo mas prolijo a nivel codigo), lo que hiciste funciona bien pero no es la mejor forma de hacerlo, si es practico como veras! -->
+                        <label for="nombre">Nombre:</label> 
                     </p>
                     <input type="text" name="nombre" placeholder="Nombre">
-                    <br>
+                    <br> <!-- Este BR debe ser reemplazado por estilos de CSS -->
                     <p>
                         <label for="email">Email:</label>
                     </p>
                     <input type="text" name="email" placeholder="Email">
                     <br>
                     <p>
-                        <label for="nombre">Dejanos tu consulta</label>
+                        <label for="nombre">Dejanos tu consulta</label> <!-- Este tiene un for="nombre" cuando no deberia ser nombre, posiblemente sea por copiar y pegar. Te recomiendo que revises el codigo, asi vas encontrando este tipo de detalles. En su lugar deberia ser mensaje -->
                     </p>
-                    <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+                    <textarea name="mensaje" id="" cols="30" rows="10"></textarea> <!-- El ID quedo vacio, mi sugerencia es que no dejes id vacios, si estan vacios no deberian estar. Entonces podes quitarlo o agregarle algun valor, segun lo que consideres mejor! -->
 
                     <br>
                     <input type="button" value="Enviar" class="boton-enviar">
